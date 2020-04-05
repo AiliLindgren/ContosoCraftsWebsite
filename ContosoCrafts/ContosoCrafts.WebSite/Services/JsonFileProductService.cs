@@ -9,11 +9,13 @@ namespace ContosoCrafts.WebSite.Services
 {
     public class JsonFileProductService
     {
+        // Konstruktorn.
         public JsonFileProductService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
 
+        // Vi får webHostEnvironment inskickad i inparametern, och vi behåller den här. Det måste ju vara en prop nedan.
         public IWebHostEnvironment WebHostEnvironment { get; }
 
         private string JsonFileName
